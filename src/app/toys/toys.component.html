@@ -1,0 +1,9 @@
+<h2>Available Toys</h2>
+<ul class="toys">
+  <li *ngFor="let toy of toys"
+    [class.selected]="toy === selectedToy"
+    (click)="onSelect(toy)">
+    <span class="badge">{{toy.id}}</span> {{toy.name}}
+  </li>
+</ul>
+<app-toy-detail [toy]="selectedToy"></app-toy-detail>

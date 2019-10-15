@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ToysComponent } from './toys/toys.component';
+import { ToyDetailComponent } from './toy-detail/toy-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToysComponent,
+	ToyDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+	FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
